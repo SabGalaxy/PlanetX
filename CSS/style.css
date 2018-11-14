@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i');
+
+/* ********************************************************************
+    Default Values
+
+    Font-Family: Roboto Condensed-Google Fonts
+    Grrenish Blue: #34c6d3 (Buttons, Icons, Links, Lines and Background)
+    Steel Gray:    #41464v (Headings)
+    Blue Bouaux:   #64707b (Paragraphs)
+    White:         #fff(Text with black Background)
+    Black:         #000
+*********************************************************************** */
+
+
+/* General CSS */
+
+html,
+body {
+    height: 100%;
+    font-family: "Roboto Condensed", "sans-serif";
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #41464b;
+}
+
+p {
+    color: #64707b;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.content-box {
+    padding: 60px 0 60px 0;
+}
+
+.content-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.content-title-underline {
+    width: 30px;
+    height: 3px;
+    background-color: #34c6d3;
+    margin: 0 auto 30px auto;
+}
+
+
+/* Button Generic */
+
+.btn-general {
+    border-width: 2px;
+    border-radius: 0;
+    padding: 12px 26px 12px 26px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: #fff;
+    color: #41464b;
+}
+
+.btn-blue {
+    border-color: #34c6d3;
+    color: #34c6d3;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+    background-color: #34c6d3;
+    color: #fff;
+}
+
+.bg-parallax {
+    background-attachment: fixed;
+}
+
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 22px;
+    padding: 3px 15px;
+    border-radius: 0;
+    display: none;
+}
+
+
+/* Animations */
+
+#home-cover,
+#home-heading,
+#home-btn {
+    animation-duration: .5s;
+}
+
+#home-cover {
+    animation-delay: .1s;
+}
+
+#home-heading {
+    animation-delay: .5s;
+}
+
+#home-btn {
+    animation-delay: 1s;
+}
+
+
+/* ********************************************************************
+                       Social Icons
+********************************************************************/
+
+.social-list {
+    padding-left: 0;
+}
+
+.social-list li {
+    list-style: none;
+    display: inline-block;
+    width: 52px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 17px;
+    color: #64707b;
+}
+
+.social-icon i:hover {
+    color: #34c6d3;
+}
+
+.owl-theme .owl-dots .owl-dot {
+    outline: none;
+}
+
+
+/* ********************************************************************
+                        Navbar
+********************************************************************/
+
+.navbar {
+    background: rgb(68, 68, 68, 0.8);
+    -o-transition: all .6s;
+    -moz-transition: all .6s;
+    -webkit-transition: all .6s;
+    -ms-transition: all .6s;
+    transition: all .6s;
+    backface-visibility: hidden;
+}
+
+#navbar-planet .nav-item>.nav-link.active {
+    color: #34c6d3;
+}
+
+.navbar .container .navbar-brand {
+    color: rgba(52, 198, 211, .7);
+}
+
+.navbar-dark .navbar-nav {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    border: 0;
+    padding: 0 3px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #34c6d3;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #34c6d3;
+    outline: 0;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-left: .8rem;
+    padding-right: .8rem;
+}
+
+
+/* ********************************************************************
+                        Home
+********************************************************************/
+
+#home {
+    height: 100%;
+}
+
+#home-cover {
+    height: 100%;
+    background-image: url(../img/bg-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#home-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#home-heading h3 {
+    color: white;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+}
+
+
+/* ********************************************************************
+                       Services
+********************************************************************/
+
+.service-item {
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.service-item-icon i {
+    color: #34c6d3;
+    float: left;
+    padding: 15px;
+    margin-right: 25px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.service-item:hover .service-item-icon i {
+    color: #fff;
+    background-color: #34c6d3;
+}
+
+.service-item-title h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+
+.service-item-description p {
+    margin: 0px;
+    padding-left: 85px;
+    /* text-align: center; */
+    float: left;
+}
+
+
+/* ********************************************************************
+                       About
+********************************************************************/
+
+#abt-bg-diagonal {
+    width: 60%;
+    height: 700px;
+    float: right;
+    background-image: url(../img/bg-about.jpg);
+    background-repeat: no-repeat;
+    border-left: 20px solid white;
+    border-top: 700px solid transparent;
+}
+
+#abt-content-box {
+    float: left;
+    height: 700px;
+}
+
+#abt-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#abt-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#abt .content-title h3 {
+    text-align: left;
+}
+
+#abt .content-title-underline {
+    margin: 0 0 30px 0;
+}
+
+#abt-description p {
+    margin-bottom: 30px;
+}
+
+
+/* ********************************************************************
+                       Work
+********************************************************************/
+
+.row.no-gutters [class*=col-] {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.img-wrapper {
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    transition: transform .5s ease;
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+
+/* ********************************************************************
+                       Team
+********************************************************************/
+
+.team-member {
+    margin: 0 15px;
+}
+
+.team-member-info {
+    margin: 10px 0 30px 0;
+}
+
+h4.team-member-name {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+h4.team-member-designation {
+    color: #34c6d3;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+
+/* ********************************************************************
+                       Testimonials
+********************************************************************/
+
+#testimonial-cover {
+    background-image: url("../img/bg-testimonials.jpg");
+}
+
+.content-title-white h3 {
+    color: #fff;
+}
+
+#testimonials .content-box {
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+#customers-testimonials {
+    padding: 50px 0;
+}
+
+.testimonial img {
+    max-width: 120px;
+    margin: 0 auto 0 auto;
+}
+
+.testimonial blockquote {
+    border: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 6px 150px;
+    color: #fff;
+    position: relative;
+}
+
+.testimonial blockquote p {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.testimonial blockquote::before,
+.testimonial blockquote::after {
+    font-size: 80px;
+    font-style: normal;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.testimonial blockquote::before {
+    content: "\201C";
+    top: 0;
+    left: 100px;
+}
+
+.testimonial blockquote::after {
+    content: "\201D";
+    bottom: 0;
+    right: 100px;
+}
+
+.testimonial-author strong {
+    color: #fff;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.testimonial-author span {
+    color: #87bf36;
+}
+
+
+/* ********************************************************************
+                     Our  Pricing
+********************************************************************/
+
+.pricing-box {
+    border: 3px solid #34c6d3;
+    padding: 50px 0px;
+    margin: 40px 0px;
+}
+
+h4.pricing-title {
+    background-color: #34c6d3;
+    color: #fff;
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+
+h3.pricing-value {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+h3.pricing-value sup {
+    font-size: 28px;
+    font-weight: normal;
+    vertical-align: super;
+}
+
+ul.pricing-specification {
+    list-style: none;
+    padding-left: 0px;
+    margin: 20px 0 60px 0;
+}
+
+ul.pricing-specification li p {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.pricing-box-lg {
+    padding: 90px 0px;
+    margin: 0;
+    background-color: #34c6d3;
+}
+
+.pricing-box-lg h4.pricing-title {
+    font-size: 40px;
+    color: #34c6d3;
+    background-color: #fff;
+}
+
+.pricing-box-lg ul.pricing-specification li p {
+    color: #fff;
+}
+
+
+/* ********************************************************************
+                     Our  Stats
+********************************************************************/
+
+#stats-cover {
+    background-image: url("../img/bg-stats.jpg");
+}
+
+#stats .content-box {
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.stats-item {
+    padding: 100px 0;
+}
+
+.stats-item i {
+    color: #34c6d3;
+}
+
+.stats-item h2 {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 1px;
+}
+
+.stats-item h2 p {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0px;
+}
+
+
+/* ********************************************************************
+                     Our  Clients
+********************************************************************/
+
+#client-items {
+    padding: 40px 0;
+}
+
+
+/* ********************************************************************
+                   Contact Us
+********************************************************************/
+
+.form {
+    width: 340px;
+    height: 440px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    position: relative
+}
+
+.form h2 {
+    margin: 10px 0;
+    color: #78788c;
+    border-bottom: 3px solid #78788c
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .3s;
+    border-bottom: 2px solid #bebed2
+}
+
+.form input:focus {
+    border-bottom: 2px solid #78788c
+}
+
+.form p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: #5a5a5a
+}
+
+.form button {
+    float: none;
+    padding: 8px 12px;
+    margin: 18px 0 0 60px;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all .3s
+}
+
+.form button:hover {
+    background: #78788c;
+    color: #fff
+}
+
+.contact-loc h5 {
+    margin: 0 0;
+    color: #34c6d3;
+}
+
+.contact-loc p {
+    color: #fff;
+}
+
+footer {
+    background-color: #41464b;
+    background-image: url("../img/world-map.png");
+}
+
+.contact-title h3 {
+    color: #34c6d3;
+    padding-top: 20px;
+}
+
+.contact-title p {
+    color: white;
+}
+
+#contact-us {
+    padding: 0 0 0 110px;
+}
+
+#ph-fax-email p strong {
+    color: #34c6d3;
+}
+
+
+/* ********************************************************************
+                  Footer
+********************************************************************/
+
+#footer-bottom {
+    background-color: #41464b;
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+#footer-copyrights p {
+    margin: 0;
+    color: #fff;
+}
+
+#footer-menu {
+    color: #fff;
+    float: left;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#footer-menu ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#footer-menu ul li {
+    display: inline-block;
+}
+
+#footer-menu a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#footer-menu a:hover {
+    color: #34c6d3;
+}
